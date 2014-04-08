@@ -16,5 +16,5 @@
 		"debug": "0.8.0"
 	},
 	"main": "lib/index.js",
-	"readme": "a simple and flexible MySql library for Node.js\n\n**homepage:** https://github.com/amoa400/aa-mysql\n\n***\n\n### install\n    npm install aa-mysql\n\n### simple usage\n\n    var aamysql = require('aa-mysql');\n    var pool = aamysql.create();\n\n    // config\n    pool.config({\n      host: 'localhost',\n      port: 3306,\n      user: 'root',\n      pass: '123',\n      prefix: 'aa_',\n      db: 'aa-blog',\n      connLimit: 20,\n      deadTime: 30\n    });\n\n    // get conection\n    pool.get(function(err, conn) {\n      // insert\n      conn.table('post').insert({alias: 'hello', title: 'hello, w0rld!', content: 'aha~~~'});\n      // update\n      conn.table('post').where({alias: 'hello'}).update({title: 'hello, world!'});\n      // select\n      conn.table('post').where({alias: 'hello'}).select();\n      // delete\n      conn.table('post').where({alias: 'hello'}).delete();\n    });\n"
+	"readme": "a simple and flexible MySql library for Node.js\n\n**homepage:** [https://github.com/amoa400/aa-mysql](https://github.com/amoa400/aa-mysql)"
 }
