@@ -1,7 +1,7 @@
 {
 	"name": "aa-mysql",
 	"description": "a simple and flexible MySql library for Node.js",
-	"version": "0.1.0",
+	"version": "0.1.2",
 	"author": "amoa400 <amoa400@163.com>",
 	"keywords": [
 		"aa-mysql",
@@ -16,5 +16,5 @@
 		"debug": "0.8.0"
 	},
 	"main": "lib/index.js",
-	"readme": "a simple and flexible MySql library for Node.js\n\n**homepage:** [https://github.com/amoa400/aa-mysql](https://github.com/amoa400/aa-mysql)"
+	"readme": "a simple and flexible MySql library for Node.js\n\nhomepage: https://github.com/amoa400/aa-mysql"
 }
