@@ -23,4 +23,12 @@ pool.get(function(err, conn) {
   conn.table('post').where({alias: 'hello'}).select();
   // delete
   conn.table('post').where({alias: 'hello'}).delete();
+  // transaction
+  conn.transaction([
+    conn.table('test').config({get: 1}).insert({name: '123'}),
+    conn.table('test').config({get: 1}).insert({id: 1, name: '456'}),
+    conn.table('test').config({get: 1}).insert({name: '555'})
+  ], function(err) {
+    console.log(err);
+  });
 });
