@@ -31,4 +31,9 @@ pool.get(function(err, conn) {
   ], function(err) {
     console.log(err);
   });
+  // join
+  var on = {'`aa_test`.`id`': ['`aa_test2`.`id`', '=', true, true]};
+  conn.table('test').join('test2', on).select(function(err, res) {
+    console.log(err, res);
+  });
 });
