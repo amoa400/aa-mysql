@@ -36,4 +36,21 @@ pool.get(function(err, conn) {
   conn.table('test').join('test2', on).select(function(err, res) {
     console.log(err, res);
   });
+  // release
+  conn.release();
 });
+
+// run
+pool.run({
+  table: 'test', 
+  field: ['id', 'name'], 
+  where: [{id: 2}, {id: 3}, 'OR'], 
+  order: [['id', 'DESC']], 
+  data: [{name: 1}, {name: 2}],
+  method: 'insert'
+}, function(err, res) {
+  console.log(err);
+  console.log(res);
+});
+
+pool.monitor();
