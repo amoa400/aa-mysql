@@ -10,10 +10,10 @@
 	"repository": "https://github.com/amoa400/aa-mysql",
 	"homepage": "http://www.amoa400.com",
 	"dependencies": {
-		"mysql": "2.1.1"
+		"mysql": "*"
 	},
 	"devDependencies": {
-		"debug": "0.8.0"
+		"debug": "*"
 	},
 	"main": "lib/index.js",
 	"readme": "a simple and flexible MySql library for Node.js\n\nhomepage: https://github.com/amoa400/aa-mysql"
