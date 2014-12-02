@@ -11,10 +11,4 @@ aamysql.config({
 });
 
 
-var conn = aamysql.create();
-conn.connect(function(err) {
-	conn.table('account').select(function(err, res){
-		console.log(err);
-		console.log(res);
-	});
-});
+var conn = aamysql.createPool();
