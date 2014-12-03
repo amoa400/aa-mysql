@@ -29,7 +29,7 @@ conn.table('user').where({name: 'cai0715'}).delete();
 conn.table('user').where({id: [2, '<']}, {id: [3, '>']}, 'OR').limit(10).select();
 ```
 
-### example
+### Example
 ```js
 var aamysql = require('aa-mysql');
 
