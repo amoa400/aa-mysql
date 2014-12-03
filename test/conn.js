@@ -9,8 +9,7 @@ aamysql.config({
 	pass: '',
 	prefix: 'aa_',
 	db: 'aa-mysql',
-	connLimit: 20,
-	deadTime: 30
+	connLimit: 20
 });
 
 // conn test
@@ -27,6 +26,19 @@ describe('conn', function() {
 		var conn = aamysql.create();
 		conn.connect(function(err) {
 			conn.query('SELECT * FROM `aa_user` WHERE `id` = 1', function(err, res) {
+				if (err) {
+					done(err);
+				}
+				res[0].should.eql({id: 1, name: 'David'});
+				done();
+			});
+		});
+	});
+
+	it('should query normally [chain]', function(done) {
+		var conn = aamysql.create();
+		conn.connect(function(err) {
+			conn.table('user').where({id: 1}).select(function(err, res) {
 				if (err) {
 					done(err);
 				}
