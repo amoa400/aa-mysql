@@ -79,6 +79,11 @@ conn.connect(function(err) {
 });
 ```
 
+### Test
+```js
+mocha
+```
+
 ### Docs
   
   * [top-level](https://github.com/amoa400/aa-mysql/wiki/top-level)
