@@ -45,8 +45,8 @@ aamysql.config({
   deadTime: 30
 });
 
-// use conn to query
-// you can also use conn pool, and it is recommended
+// use single connection to query
+// you can also use connection pool, and it is recommended
 var conn = aamysql.create();
 conn.connect(function(err) {
   if (err) {

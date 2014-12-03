@@ -1,14 +1,13 @@
 {
   "name": "aa-mysql",
   "description": "a simple and flexible MySql library for Node.js",
-  "version": "0.1.5",
+  "version": "1.0.0",
   "author": "amoa400 <amoa400@163.com>",
   "keywords": [
     "aa-mysql",
     "mysql"
   ],
   "repository": "https://github.com/amoa400/aa-mysql",
-  "homepage": "http://www.amoa400.com",
   "dependencies": {
     "mysql": "^2.5.3"
   },
