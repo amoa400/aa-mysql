@@ -11,11 +11,28 @@
  Target Server Version : 50619
  File Encoding         : utf-8
 
- Date: 12/03/2014 12:07:51 PM
+ Date: 12/03/2014 15:06:28 PM
 */
 
 SET NAMES utf8;
 SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+--  Table structure for `aa_ad`
+-- ----------------------------
+DROP TABLE IF EXISTS `aa_ad`;
+CREATE TABLE `aa_ad` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+--  Records of `aa_ad`
+-- ----------------------------
+BEGIN;
+INSERT INTO `aa_ad` VALUES ('1', 'Nike 50% off'), ('2', 'Adidas 70% off'), ('3', 'PUMA 10% off'), ('4', 'LiNing 15% off');
+COMMIT;
 
 -- ----------------------------
 --  Table structure for `aa_order`
