@@ -41,8 +41,7 @@ aamysql.config({
   pass: '',
   prefix: 'aa_',
   db: 'aa-mysql',
-  connLimit: 20,
-  deadTime: 30
+  connLimit: 20
 });
 
 // use single connection to query
