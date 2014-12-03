@@ -2,7 +2,7 @@
 
 a simple and flexible MySql library for [node](http://nodejs.org).
 
-[![NPM Version][https://img.shields.io/npm/v/aa-mysql.svg?style=flat]][https://www.npmjs.org/package/aa-mysql]
+[![NPM Version](https://img.shields.io/npm/v/aa-mysql.svg?style=flat)](https://www.npmjs.org/package/aa-mysql)
 
 ***
 
