@@ -66,7 +66,7 @@ conn.connect(function(err) {
   // transaction
   conn.transaction([
     conn.table('user').op({get: 1}).insert({name: 'amoa400'}),
-    conn.table('user').op({get: 1}).insert({id: 'ok', name: 'amoa400'})
+    conn.table('user').op({get: 1}).insert({id: 'hi', name: 'cai0715'})
     // will cause rollback, because id must be number
   ], function(err, res) {
     if (err) {
