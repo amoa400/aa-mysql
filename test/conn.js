@@ -58,7 +58,7 @@ describe('conn', function() {
 				res[0].affectedRows.should.eql(1);
 				res[1].affectedRows.should.eql(1);
 				done(err);
-			})
+			});
 		});
 	});
 
@@ -74,7 +74,7 @@ describe('conn', function() {
 				} else {
 					done(new Error('should rollback'));
 				}
-			})
+			});
 		});
 	});
 });
