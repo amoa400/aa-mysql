@@ -78,10 +78,8 @@ conn.connect(function(err) {
 });
 ```
 
-### Test
-```js
-mocha
-```
+### Dependency 
+[node-mysql](https://github.com/felixge/node-mysql) 
 
 ### Docs
   
