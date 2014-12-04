@@ -64,8 +64,8 @@ conn.connect(function(err) {
   
   // transaction
   conn.transaction([
-    conn.table('user').op({get: 1}).insert({name: 'amoa400'}),
-    conn.table('user').op({get: 1}).insert({id: 'hi', name: 'cai0715'})
+    conn.table('user').option({get: true}).insert({name: 'amoa400'}),
+    conn.table('user').option({get: true}).insert({id: 'hi', name: 'cai0715'})
     // will cause rollback, because id must be number
   ], function(err, res) {
     if (err) {
@@ -86,3 +86,9 @@ conn.connect(function(err) {
  * [conn](https://github.com/amoa400/aa-mysql/wiki/conn)
  * [pool](https://github.com/amoa400/aa-mysql/wiki/pool)
  * [query](https://github.com/amoa400/aa-mysql/wiki/query)
+
+### Users
+  
+ * [amoa400-blog](http://www.amoa400.com)
+ * [SmartStudy](http://www.smartstudy.com)
+ * [SmartPigai](http://www.smartpigai.com)
