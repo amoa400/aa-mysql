@@ -1,7 +1,7 @@
 {
   "name": "aa-mysql",
   "description": "A simple and flexible mysql library for node.",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "author": "amoa400 <amoa400@163.com>",
   "keywords": [
     "aa-mysql",
@@ -16,12 +16,12 @@
     "mysql": "^2.5.3"
   },
   "devDependencies": {
-    "debug": "^2.1.0",
     "should": "^4.3.0"
   },
   "main": "lib/index.js",
   "license": "MIT",
   "files": [
+    "lib",
     "README.md"
   ]
 }
