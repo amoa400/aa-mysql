@@ -74,7 +74,7 @@ describe('pool', function() {
 		});
 		setTimeout(function() {
 			done();
-		}, 500);
+		}, 200);
 	});
 
 	it('should query normally', function(done) {
