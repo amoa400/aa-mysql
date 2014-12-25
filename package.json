@@ -1,7 +1,7 @@
 {
   "name": "aa-mysql",
   "description": "A simple and flexible mysql library for node.",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": "amoa400 <amoa400@163.com>",
   "keywords": [
     "mysql",
