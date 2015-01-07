@@ -1,4 +1,4 @@
-[![aa-mysql Logo](http://cdn.amoa400.com/github/aa-mysql.small.png)](https://github.com/amoa400/aa-mysql)  
+[![aa-mysql Logo](https://raw.githubusercontent.com/amoa400/mycdn/master/images/logo/aa-mysql.png)](https://github.com/amoa400/aa-mysql)  
 A simple and flexible MySql library for [node](http://nodejs.org).  
 
 [![NPM Version](https://img.shields.io/npm/v/aa-mysql.svg?style=flat-square)](https://www.npmjs.org/package/aa-mysql)&nbsp;&nbsp;[![Node.js Version](https://img.shields.io/badge/node.js-%3E%3D_0.6-brightgreen.svg?style=flat-square)](http://nodejs.org/download/)
